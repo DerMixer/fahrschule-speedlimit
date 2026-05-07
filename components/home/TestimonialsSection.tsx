@@ -40,7 +40,7 @@ export default function TestimonialsSection() {
                   ))}
                 </div>
               )}
-              <p className="text-[#1A1A2E] text-sm leading-relaxed mb-5">"{t.content}"</p>
+              <p className="text-[#1A1A2E] text-sm leading-relaxed mb-5">&ldquo;{t.content}&rdquo;</p>
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#1B3A5C] to-[#2D6A9F] flex items-center justify-center shrink-0">
                   <span className="text-white text-xs font-bold">{t.author.charAt(0)}</span>
