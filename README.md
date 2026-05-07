@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fahrschule Speedlimit – Kiel
 
-## Getting Started
+Website für Fahrschule Speedlimit, eine Fahrschule in Kiel mit über 70 Jahren Ausbildungserfahrung. Führerscheinkurse in den Klassen B, B96 & BE, Intensivkurse in 21 Tagen und moderner AUDI-Fuhrpark.
 
-First, run the development server:
+## Seiten
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+| Route | Beschreibung |
+|-------|-------------|
+| `/` | Startseite – Hero, USPs, Führerscheinklassen, Intensivkurse, Fuhrpark, Testimonials |
+| `/fuehrerscheinklassen` | Detailübersicht aller Klassen (B ab 17, B ab 18, B96, BE) + Theorieausbildung |
+| `/intensivkurse` | Intensivkurse (21 Tage, jeden Montag) + FAQ-Accordion |
+| `/ueber-uns` | Team, Fuhrpark, USPs |
+| `/kontakt` | Kontaktformular (react-hook-form + zod), Öffnungszeiten, Adresse |
+
+## Stack
+
+- **Framework:** Next.js 16 (App Router), TypeScript
+- **Styling:** Tailwind CSS v4
+- **Animationen:** Framer Motion
+- **Icons:** lucide-react
+- **Formulare:** react-hook-form + zod + @hookform/resolvers
+- **Fonts:** Montserrat (Headings), Open Sans (Body) via next/font/google
+
+## Projektstruktur
+
+```
+src/app/           → Next.js App Router Seiten & Layouts
+components/
+  navigation/      → Navbar, Footer
+  home/            → Hero, USPFeatures, FuehrerscheinklassenCards, IntensivkurseSection,
+                     FuhrparkShowcase, CTABanner, TeamSection, TheoretischAusbildung,
+                     TestimonialsSection, FAQSection, OpeningHours, MiniHero
+  forms/           → ContactForm
+style/             → animations.ts, colors.ts, fontSizes.ts, gradient.ts, popupTextSx.ts
+static/            → team.ts, services.ts, faq.ts, openingHours.ts, gallery.ts, testimonials.ts,
+                     constants.ts, defaultValues.ts, homeContent.ts
+types/             → general.ts, landing.ts, stack.ts, team.ts, services.ts, faq.ts
+public/            → robots.txt, llms.txt
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev       # Entwicklungsserver
+npm run build     # Produktions-Build
+npm run lint      # Lint-Prüfung
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Kontakt (Fahrschule)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Adresse:** Sophienblatt 46, 24114 Kiel
+- **Telefon:** +49 431 38673777
+- **E-Mail:** info@fahrschule-speedlimit.de
+- **Öffnungszeiten:** Mo, Di, Do 13–19 Uhr
