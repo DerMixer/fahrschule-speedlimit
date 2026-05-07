@@ -4,7 +4,7 @@ import { OPENING_HOURS } from '@/static/openingHours';
 export default function OpeningHours() {
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-[#1B3A5C]/5 p-6">
-      <div className="flex items-center gap-3 mb-5">
+      <div className="flex flex-col items-start gap-2 mb-5">
         <Clock size={22} className="text-[#1B3A5C] pointer-events-none" />
         <h3 className="text-lg font-bold font-montserrat text-[#1A1A2E]">Öffnungszeiten</h3>
       </div>

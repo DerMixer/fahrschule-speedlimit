@@ -23,7 +23,7 @@ export default function FuhrparkShowcase() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <motion.div variants={fadeUpVariants} className="flex items-center gap-3 mb-6">
+            <motion.div variants={fadeUpVariants} className="flex flex-col items-start gap-2 mb-6">
               <Car size={28} className="text-[#1B3A5C] pointer-events-none" />
               <h2 className="text-3xl font-bold font-montserrat text-[#1A1A2E]">Unser AUDI-Fuhrpark</h2>
             </motion.div>

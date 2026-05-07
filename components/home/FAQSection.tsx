@@ -12,7 +12,7 @@ export default function FAQSection() {
     <section className="bg-white py-20">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="flex flex-col items-center gap-2 mb-4">
             <HelpCircle size={28} className="text-[#1B3A5C] pointer-events-none" />
             <h2 className="text-3xl font-bold font-montserrat text-[#1A1A2E]">Häufige Fragen</h2>
           </div>
