@@ -15,6 +15,22 @@ body {
   font-family: var(--font-open-sans), 'Open Sans', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+a,
+a *,
+a.select-none,
+a.select-none * {
+  user-select: text;
+}
+
+input,
+textarea,
+select,
+option,
+[contenteditable="true"] {
+  user-select: text;
 }
 
 * {

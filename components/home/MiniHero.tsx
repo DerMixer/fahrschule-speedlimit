@@ -24,7 +24,7 @@ export default function MiniHero({ title, subtitle, breadcrumb }: Props) {
         >
           {breadcrumb && breadcrumb.length > 0 && (
             <motion.nav variants={heroItemVariants} className="flex items-center gap-2 mb-4 text-sm select-none">
-              <Link href="/" className="text-white/50 hover:text-white transition-colors cursor-pointer">
+              <Link href="/" className="text-white/50 hover:text-white transition-colors cursor-pointer select-none">
                 Startseite
               </Link>
               {breadcrumb.map((crumb) => (

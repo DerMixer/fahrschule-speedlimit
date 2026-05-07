@@ -43,7 +43,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-[#FF6B2C] mt-0.5 shrink-0 pointer-events-none" />
-                <span className="text-[#6B7A8D] text-sm">
+                <span className="text-[#6B7A8D] text-sm select-none">
                   {CONTACT.address}<br />
                   {CONTACT.postalCode} {CONTACT.city}
                 </span>
@@ -52,7 +52,7 @@ export default function Footer() {
                 <Phone size={16} className="text-[#FF6B2C] shrink-0 pointer-events-none" />
                 <a
                   href={`tel:${CONTACT.phone.replace(/\s/g, '')}`}
-                  className="text-[#6B7A8D] hover:text-white text-sm transition-colors cursor-pointer"
+                  className="text-[#6B7A8D] hover:text-white text-sm transition-colors cursor-pointer select-none"
                 >
                   {CONTACT.phone}
                 </a>
@@ -61,7 +61,7 @@ export default function Footer() {
                 <Mail size={16} className="text-[#FF6B2C] shrink-0 pointer-events-none" />
                 <a
                   href={`mailto:${CONTACT.email}`}
-                  className="text-[#6B7A8D] hover:text-white text-sm transition-colors cursor-pointer"
+                  className="text-[#6B7A8D] hover:text-white text-sm transition-colors cursor-pointer select-none"
                 >
                   {CONTACT.email}
                 </a>

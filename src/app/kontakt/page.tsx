@@ -49,7 +49,7 @@ export default function KontaktPage() {
                     </div>
                     <div>
                       <p className="text-sm font-medium text-[#1A1A2E]">Adresse</p>
-                      <p className="text-[#6B7A8D] text-sm">
+                      <p className="text-[#6B7A8D] text-sm select-none">
                         {CONTACT.address}<br />
                         {CONTACT.postalCode} {CONTACT.city}
                       </p>
@@ -63,7 +63,7 @@ export default function KontaktPage() {
                       <p className="text-sm font-medium text-[#1A1A2E]">Telefon</p>
                       <a
                         href={`tel:${CONTACT.phone.replace(/\s/g, '')}`}
-                        className="text-[#6B7A8D] text-sm hover:text-[#FF6B2C] transition-colors cursor-pointer"
+                        className="text-[#6B7A8D] text-sm hover:text-[#FF6B2C] transition-colors cursor-pointer select-none"
                       >
                         {CONTACT.phone}
                       </a>
@@ -77,7 +77,7 @@ export default function KontaktPage() {
                       <p className="text-sm font-medium text-[#1A1A2E]">E-Mail</p>
                       <a
                         href={`mailto:${CONTACT.email}`}
-                        className="text-[#6B7A8D] text-sm hover:text-[#FF6B2C] transition-colors cursor-pointer"
+                        className="text-[#6B7A8D] text-sm hover:text-[#FF6B2C] transition-colors cursor-pointer select-none"
                       >
                         {CONTACT.email}
                       </a>
@@ -91,12 +91,12 @@ export default function KontaktPage() {
                 <div className="h-48 bg-gradient-to-br from-[#1B3A5C]/5 to-[#2D6A9F]/10 flex items-center justify-center">
                   <div className="text-center">
                     <MapPin size={32} className="text-[#1B3A5C] mx-auto mb-2 pointer-events-none" />
-                    <p className="text-[#1A1A2E] text-sm font-medium">Sophienblatt 46, Kiel</p>
+                    <p className="text-[#1A1A2E] text-sm font-medium select-none">Sophienblatt 46, Kiel</p>
                     <a
                       href="https://maps.google.com/?q=Sophienblatt+46+24114+Kiel"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#FF6B2C] text-xs hover:underline cursor-pointer mt-1 inline-block"
+                      className="text-[#FF6B2C] text-xs hover:underline cursor-pointer mt-1 inline-block select-none"
                     >
                       In Google Maps öffnen
                     </a>
