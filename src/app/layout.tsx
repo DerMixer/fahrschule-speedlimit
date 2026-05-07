@@ -80,6 +80,7 @@ export default function RootLayout({
     <html
       lang="de"
       className={`${montserrat.variable} ${openSans.variable} h-full antialiased`}
+      data-scroll-behavior="smooth"
     >
       <head>
         <script
