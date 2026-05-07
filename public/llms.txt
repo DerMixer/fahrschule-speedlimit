@@ -1,0 +1,33 @@
+# Fahrschule Speedlimit – Kiel
+
+## Beschreibung
+Fahrschule Speedlimit ist eine Fahrschule in Kiel mit über 70 Jahren Ausbildungserfahrung. Wir bieten Führerscheinkurse in den Klassen B (PKW ab 17 & ab 18), B96 und BE an. Unser moderner AUDI-Fuhrpark und flexible Intensivkurse (21 Tage, jeden Montag buchbar) machen uns zur ersten Wahl für Fahranfänger in Kiel.
+
+## Kernleistungen
+- Führerschein Klasse B (BF17 – begleitetes Fahren ab 17)
+- Führerschein Klasse B (PKW ab 18)
+- Führerschein Klasse B96 (Anhänger bis 4.250 kg)
+- Führerschein Klasse BE (schwere Anhänger)
+- Intensivkurse (21 Ausbildungstage, ganzjährig)
+- Sommerferienkurse & Semesterferienkurse
+- Online-Theorie mit Testsieger-Lernsystem
+
+## Zielgruppe
+Fahranfänger zwischen 17 und 25 Jahren, Studierende und Berufstätige in Kiel, die flexibel und schnell ihren Führerschein machen möchten.
+
+## Kontakt
+- Adresse: Sophienblatt 46, 24114 Kiel, Deutschland
+- Telefon: +49 431 38673777
+- E-Mail: info@fahrschule-speedlimit.de
+- Website: https://fahrschule-speedlimit.de
+
+## Öffnungszeiten Büro
+- Montag: 13:00–19:00 Uhr
+- Dienstag: 13:00–19:00 Uhr
+- Donnerstag: 13:00–19:00 Uhr
+
+## Technischer Stack
+- Framework: Next.js 15 App Router, TypeScript, Tailwind CSS
+- Animationen: Framer Motion
+- Icons: lucide-react
+- Formulare: react-hook-form + zod
